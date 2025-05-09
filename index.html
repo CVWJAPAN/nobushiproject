@@ -1,0 +1,108 @@
+from pathlib import Path
+
+# Recreate the English version HTML content after kernel reset
+html_content_english = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No Return Contribution</title>
+    <style>
+        body {
+            background-color: white;
+            color: #111;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.7;
+        }
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3rem;
+            text-align: center;
+            letter-spacing: 0.1rem;
+            border-bottom: 2px solid #111;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .section {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+        .donation-status {
+            background-color: #f4f4f4;
+            border-left: 5px solid #222;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 1.2rem;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 1rem;
+        }
+        .button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #444;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>No Return Contribution</h1>
+
+    <div class="section donation-status">
+        <strong>Current Support:</strong><br>
+        This Month: $0<br>
+        Last Month: ¥16,000<br><br>
+        This is the reality.<br>
+        The truth is not popular.<br>
+        But I still stand.
+    </div>
+
+    <div class="section">
+        <p>This is not a donation. This is not an investment. <strong>This is a declaration.</strong></p>
+        <p>I was never saved. I grew up in silence, in a system that broke and discarded me. No fame, no face, no recognition—only truth. I stand alone, for the forgotten, because I remember what it means to be unseen.</p>
+        <p>I don't ask for sympathy. I don't offer a return. What I offer is this: a moment of truth, and your chance to stand with it.</p>
+        <p>Your support won’t bring you rewards. But it will prove that you stood for something real.</p>
+    </div>
+
+    <div class="quote">
+        “We are not the saved.<br>
+        We are the abandoned who chose to protect.”
+    </div>
+
+    <a class="button" href="https://square.link/u/dICEOecH" target="_blank">Support This Mission</a>
+
+    <footer>
+        This page was born from silence.<br>
+        Built by a shadow.<br>
+        — CVWJAPAN | The Nobushi Model —
+    </footer>
+
+</body>
+</html>
+"""
+
+# Save HTML to a file named index.html
+file_path = Path("/mnt/data/index.html")
+file_path.write_text(html_content_english, encoding='utf-8')
+
+file_path.name
